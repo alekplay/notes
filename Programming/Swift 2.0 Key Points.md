@@ -1,3 +1,4 @@
+
 # Swift 2.0 key points
 Notes on Swift language features, syntax, library functions, rules, and general computer science theory gathered from playing with Swift, reading books, and following tutorials.
 ___
