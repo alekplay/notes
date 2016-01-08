@@ -38,4 +38,4 @@ Notes from experimenting with and reading about Adaptive Layouts which were intr
 	* You can uninstall a constraint by selecting it in the __size inspector__ and pressing `delete`, or from the storyboard/ document outline and pressing `cmd + delete`
 		* The constraint will appear _greyed out_ in both the size inspector and document outline
 	* By opening the size inspector for a given constraint you can also install/ uninstall it for different size classes
-* __Fonts__ can be overridden with size classes too, by pressing the little `+` next to the font name in the __Attributes Inspector__
+* __Fonts__ can also be overridden with size classes, by pressing the little `+` next to the font name in the __Attributes Inspector__
