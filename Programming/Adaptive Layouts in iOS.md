@@ -18,7 +18,12 @@ Notes from experimenting with and reading about Adaptive Layouts which were intr
 * You can add more device sizes by tapping the `+` in the lower left corner of the preview window
 * You can change the orientation by tapping the button next to the device name underneath a specific size preview
 
-## Size Classes
+## Trait Collections
+* A __trait collection__ is a set of characteristics that describe the current environment
+* Trait collections includes the vertical and horizontal size class,  the screen scale, and the device idiom
+
+
+### Size Classes
 * A __size class__ is a property applied to any view or controller, that represents the amount of content that can be displayed in a given horizontal or vertical dimension
 * Size classes are automatically handed down to the app by the device, but _can be overridden_ for individual views/ controllers
 * There are two size classes for each dimension: __regular__ and __compact__
@@ -39,3 +44,10 @@ Notes from experimenting with and reading about Adaptive Layouts which were intr
 		* The constraint will appear _greyed out_ in both the size inspector and document outline
 	* By opening the size inspector for a given constraint you can also install/ uninstall it for different size classes
 * __Fonts__ can also be overridden with size classes, by pressing the little `+` next to the font name in the __Attributes Inspector__
+* Entire views can also be uninstalled in certain size classes, by selecting them and pressing `cmd + delete`
+* You can override a size class for a view or controller using the method: `setOverrideTraitCollection(UITraitCollection(...), forChildViewController: ViewController)`
+	* Providing `nil` as the first parameter, will reset the trait collection back to the default for this device
+* __Asset Catalogs__ allow you to specify different images for different size classes
+	* This can be set in the Attributes Inspector
+	* The notation for the different size classes is as follows: `*` = Any, `-` = Compact, `+` = Regular
+* `UIAppearance` allows you to specify different styles based on the size classes: `object.appearanceForTraitCollection(traitCollection).attribute = value`
