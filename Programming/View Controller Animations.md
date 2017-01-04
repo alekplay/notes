@@ -1,4 +1,6 @@
-### UIViewController Animations
+## UIViewController Animations
+
+### View Controller Presentation Animations
 
 #### Background
 
@@ -69,3 +71,64 @@ The `transitionContext` passed to the animation controller gives you access to t
 
 
 
+### Navigation Controller Animations
+
+#### Background
+
+Navigation controller animations works very similarly to presenting view controllers. There are a few caveats.
+
+##### The navigation controller delegate
+
+Instead of the transitioning delegate, we have to implement the `UINavigationControllerDelegate` protocol. This has one method, `navigationController(navigationController:animationControllerForOperation:fromViewController:toViewController)`, which will be called by the navigation controller requesting a custom animation controller. If this is not implemented (or returns `nil`) the custom animation will be used. The `operation` parameter specifies whether the transition is a `.push` or `.pop`.
+
+#### Implementation
+
+1. Your main view controller (or any class you designate for this purpose) must adopt the `UINavigationControllerDleegate`. You must create and return a custom animation controller in the `navigationController(navigationController:animationControllerForOperation:fromViewController:toViewController)` method. 
+
+   ```swift
+   extension MyViewController: UINavigationControllerDelegate {
+     func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+      return transition 
+     }
+   }
+   ```
+
+2. You must set the `delegate` of the navigation controller early in the current view controller cycle, before pushing anything on the stack.
+
+   ```swift
+   override func viewDidLoad() {
+   super.viewDidLoad()
+   navigationController?.delegate = self
+   }
+   ```
+
+3. Create a custom class conforming to the `UIViewControllerAnimatedTransitioning` protocol.
+
+   1. You must implement the required `transitionDuration(using:)` delegate method, which should return the total duration of your animation.
+   2. You must implement the required `animateTransition(using:)` delegate method, which will contain all your animation code.
+
+   ```swift
+   class MyAnimationController: NSObject, UIViewControllerAnimatedTransitioning {
+     let animationDuration = 1.0
+
+     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+       return animationDuration
+     }
+     
+     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+       let containerView = transitionContext.containerView
+       let toView = transitionContext.view(forKey: .to)!
+       
+       toView.alpha = 0.0
+       containerView.addSubview(toView)
+       
+       UIView.animate(withDuration: animationDuration, animations: {
+         toView.alpha = 1.0
+       }, completion: { _ in
+       	transitionContext.completeTransition(true)
+       }) // this will fade the new view controller in over the old
+     }
+   }
+   ```
+
+   ​
