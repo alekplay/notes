@@ -5,3 +5,5 @@
 
 ##Business
 * [7 Questions Before Starting Your Startup](Business/7%20Questions%20Before%20Starting%20Your%20Startup.md)
+* [Getting your business started](Business/Getting%20your%20business%20started.md)
+
