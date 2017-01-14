@@ -1,6 +1,6 @@
 ### Getting your business started
 
-There are a lot of misconceptions when it comes to doing your own thing. These are some advice to get you off the ground.
+There are a lot of misconceptions when it comes to doing your own thing. This is advice to get you off the ground.
 
 #### 1. Ignore the "real world"
 
@@ -69,3 +69,7 @@ Companies with the intention of being acquired focus on the wrong things. Don't 
 #### 17. Less mass is good
 
 The less things holding you back (employees, inventory, contracts, offices, etc.) the more lean you are. Less energy, money, and effort is required to change directions, which might happen more often than you think.
+
+---
+
+Source: [Jason Fried and David Heinemeier Hansson, Rework](https://www.amazon.com/Rework-Jason-Fried/dp/0307463745)
