@@ -70,6 +70,50 @@ Companies with the intention of being acquired focus on the wrong things. Don't 
 
 The less things holding you back (employees, inventory, contracts, offices, etc.) the more lean you are. Less energy, money, and effort is required to change directions, which might happen more often than you think.
 
+#### 18. Embrace constraints
+
+With no room for waste, limited resources force you to make do with what you've got. It forces you to be creative. Constraints should be embraced, not avoided.
+
+#### 19. Focus on one thing
+
+Don't try to do it all at once. Focus on one thing, and doing it well.
+
+#### 20. Start with the core features
+
+There are lots of things you'd like to do, but you have to begin with the core feature. Figure out what makes your product, and work on that.
+
+#### 21. Ignore the details
+
+Details make a difference, but don't get lost in things that don't really matter. Nail the basics first, and worry about the specifics later.
+
+#### 22. Make quick decisions
+
+Get into the rythm of making choices, because that is progress. Don't postpone, but get it out of the way.
+
+#### 23. Less is more
+
+Constantly look for things to remove, ways to simplify and streamline your products. Don't just throw everything you've got in there, but make sure it serves a purpose and keep only what is truly essential.
+
+#### 24. Trim down problems
+
+Don't escalate problems by throwing more at it. Simplify and then fix.
+
+#### 25. Focus on what won't change
+
+Trends fade, but certain features are forever. Focus on what never goes out of style, and you'll have a business that'll last a long time.
+
+#### 26. It's not the equipment
+
+Better equipment may simplify things a little, but there is no shortcut to success. Do with what you've got, and just get started. 
+
+#### 27. Sell your by-products
+
+To any business, there will always be a by-product. Try to find your by-product, and think about how you can monetize it.
+
+#### 28. Launch now
+
+Your product will never be finished, so get it in the hands of many as soon as possible. If you're not at least a little embarrassed by your product, you launched too late.
+
 ---
 
 Source: [Jason Fried and David Heinemeier Hansson, Rework](https://www.amazon.com/Rework-Jason-Fried/dp/0307463745)
